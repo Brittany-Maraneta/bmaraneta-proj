@@ -43,7 +43,7 @@ p {
   grid-template-columns: repeat(3, 1fr);
   gap: 1px; /* Adjust spacing between images */
   margin-bottom: 20px;
-  margin-top: 115px;
+  margin-top: 145px;
 }
 
 .header img {

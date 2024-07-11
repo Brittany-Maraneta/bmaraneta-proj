@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="356" height="319" fill="none">
+  <ellipse cx="66.7" cy="196.8" fill="#004B03" rx="2.2" ry="56.2" transform="rotate(-30 67 197)"/>
+  <ellipse cx="89.1" cy="224.5" fill="#004B03" rx="1.7" ry="15.2" transform="rotate(-5 89 224)"/>
+  <ellipse cx="56.6" cy="209.5" fill="#004B03" rx="2.2" ry="42.5" transform="rotate(-53 57 210)"/>
+  <path stroke="#004B03" stroke-width="2" d="m67 165-5 12m0-1 7 12m-1-1 2 17"/>
+  <path fill="#004B03" fill-rule="evenodd" d="m68 235-6-8 1-1 6 7h10v1l13 4v2l-13-5H68Z" clip-rule="evenodd"/>
+  <ellipse cx="61.2" cy="225.7" fill="#fff" rx="2.5" ry="3" transform="rotate(-25 61 226)"/>
+  <ellipse cx="67.5" cy="163.2" fill="#fff" rx="2.5" ry="3" transform="rotate(-25 68 163)"/>
+  <ellipse cx="61.4" cy="176" fill="#fff" rx="2.5" ry="3" transform="rotate(-25 61 176)"/>
+  <ellipse cx="67.2" cy="236.1" fill="#fff" rx="2.5" ry="3" transform="rotate(-25 67 236)"/>
+  <path fill="#fff" fill-rule="evenodd" d="M29 176a22 22 0 0 1 2-5l3-2 2-1 3 1v1l1-1h3l2 2 1 3 1 4-1 4 4-1h3l2 2 1 2v1l1 1 2 2v2l-2 3-3 3-4 2h-1l-1 1a24 24 0 0 1 1 5v3l-2 2-3 1-1-1v2l-2 1h-2l-3-2-3-4-1-3-1 1-4 2-4 1h-4l-2-2v-4h-1l-2-2v-3l2-3a16 16 0 0 1 4-3l-3-3-2-4-1-3 1-3 2-1h1v-2l1-2 3-1 3 1 4 3Z" clip-rule="evenodd"/>
+  <circle cx="35.2" cy="189.8" r="4" fill="#000" transform="rotate(-25 35 190)"/>
+  <path fill="#fff" fill-rule="evenodd" d="M26 119a22 22 0 0 1 2-4l2-3 3-1 2 1 1 1h1l3-1 2 2 1 3 1 5-1 3 4-1h3l2 2 1 3v1h1l2 2v3l-2 2-3 3-4 2v1-1h-1l-1 1a23 23 0 0 1 1 5v4l-2 2h-4v1l-2 2-3-1-2-2-3-3-1-3h-1v1l-4 1-4 1h-4l-2-2v-3l-1-1-2-2v-3l2-2a16 16 0 0 1 4-4l-3-3-2-4-1-3 1-3 2-1h1v-1l1-3h3l3 1 4 2Z" clip-rule="evenodd"/>
+  <circle cx="32.1" cy="133.1" r="4" fill="#000" transform="rotate(-25 32 133)"/>
+  <path fill="#fff" fill-rule="evenodd" d="m85 181 1 1a22 22 0 0 1 2-5l2-3h3l2 1 1 1 1-1h3l2 1 1 4v7l3-1 4 1 2 1 1 3-1 1h2l1 2v3l-1 3-3 3-5 2-1 1 1 5-1 3-1 2h-4v1l-2 2h-3l-3-2-2-4-2-3v1l-4 2-5 1-3-1-2-1-1-3 1-1-2-1-1-2v-2l2-3a16 16 0 0 1 4-3l-3-4-2-3-1-4 1-2 2-2h1v-1l1-2 2-1 4 1 3 2Z" clip-rule="evenodd"/>
+  <circle cx="91.9" cy="195.5" r="4" fill="#000" transform="rotate(-25 92 196)"/>
+  <path fill="#004B03" fill-rule="evenodd" d="M88 127a1108 1108 0 0 1-8 33c5-6 10-11 11-10s-3 6-9 12l-8 9-4 9 1-7-1-1 1-2 2-5a473 473 0 0 1-7-80 611 611 0 0 1 9 73 1206 1206 0 0 1 28-86c1 1-6 25-15 55Z" clip-rule="evenodd"/>
+  <path fill="#004B03" fill-rule="evenodd" d="m97 109 13-5v2l-11 4-4 12-11 12-1-1 10-13 4-11Zm-38 44 1-10 2 1-1 9 7 7 5 13-2 1-5-13-7-8Z" clip-rule="evenodd"/>
+  <ellipse cx="61.1" cy="141.6" fill="#fff" rx="2.5" ry="3" transform="rotate(23 61 142)"/>
+  <ellipse cx="111.4" cy="104" fill="#fff" rx="2.5" ry="3" transform="rotate(23 111 104)"/>
+  <ellipse cx="97.8" cy="108.1" fill="#fff" rx="2.5" ry="3" transform="rotate(23 98 108)"/>
+  <ellipse cx="57.4" cy="153" fill="#fff" rx="2.5" ry="3" transform="rotate(23 57 153)"/>
+  <path fill="#fff" fill-rule="evenodd" d="M76 84v1a22 22 0 0 1 5-2h3l3 1v4h2l2 2v2l-2 4-3 3-2 2 2 2 3 2v3l-2 2-1 1 1 1v3l-2 2h-8l-4-2h-2a22 22 0 0 1-3 4l-3 2h-2l-2-2-1-1-1 1-2-1-2-2v-3l1-4 1-4h-1v1-1l-4-1-4-3-2-3v-2l2-2 1-1-1-1v-3l2-1 4-1a16 16 0 0 1 5 1v-4l2-5 2-3 2-1 2 1 1 1 1-1 3-1 2 1 1 4 1 4Z" clip-rule="evenodd"/>
+  <circle cx="70" cy="98.2" r="4" fill="#000" transform="rotate(23 70 98)"/>
+  <path fill="#fff" fill-rule="evenodd" d="M116 43v1h1l4-2h3l2 1 1 3v1h1l2 2v3l-1 3-3 3-3 2 3 2 2 3v3l-1 2h-1l1 1-1 3-2 2-3 1-4-1-4-1h-1v-1h-1a21 21 0 0 1-3 4l-3 2h-3l-2-2h-4l-1-2-1-4 1-4 2-3h-2l-4-2-3-2-2-3v-3l1-2 1-1v-3l2-2 3-1a16 16 0 0 1 6 1v-4l1-4 2-3 3-1h2l1 1 1-1h2l2 1 2 3 1 4Z" clip-rule="evenodd"/>
+  <circle cx="109.6" cy="57.5" r="4" fill="#000" transform="rotate(23 110 58)"/>
+  <path fill="#fff" fill-rule="evenodd" d="M110 129v1a22 22 0 0 1 5-2h4l2 2 1 2-1 1 2 1 2 1v3l-2 3-3 4-2 1 3 2 2 3v3l-2 2-1 1 1 1v2l-2 2-3 1-5-1-4-1v-1h-2a21 21 0 0 1-3 4l-3 2h-2l-2-1-1-1h-3l-2-2v-3l1-5 1-3h-1l-4-2-4-2-2-3v-3l2-2h1l-1-1v-3l2-2h4a16 16 0 0 1 5 1v-5l2-4 2-3 2-1 3 1h1l3-1 2 1 1 3 1 4Z" clip-rule="evenodd"/>
+  <circle cx="104" cy="143.8" r="4" fill="#000" transform="rotate(23 104 144)"/>
+  <path fill="#000" d="M109 163c0 3-1 5-3 6-1 2-4 3-7 4 4 0 6 1 9 3l2 4 2 5c0 4-2 7-6 10-4 2-9 4-15 4s-11-1-14-3-4-5-4-9v-26l-2-7c6-3 12-4 19-4 6 0 11 1 14 4 3 2 5 6 5 9Zm-19 8 6-2c2-1 2-3 2-5l-2-5-6-2-7 1v13h7Zm-7 17c0 3 2 4 8 4l8-2 2-5-2-6-8-2h-8v11Zm85 9-5 1-4-1-2-5-2-32-11 35c-1 2-2 3-4 3l-3-1-1-2-11-36-2 33-2 5-4 2c-2 0-4-1-5-3l2-5 2-33-1-5c3-2 6-3 10-3 3 0 6 1 7 3 2 1 3 4 4 8l5 19 5-18c1-5 3-8 5-9 2-2 4-3 7-3l8 2-1 4v2l2 33 1 6Zm16-14h10l-5-17-5 17Zm28 12-3 3-4 1-4-2-3-4-2-4h-14l-2 5c-1 3-3 5-6 5l-4-1-2-3 2-1 1-3 13-34-2-4c1-2 3-3 6-3l5 2 3 6 11 31c1 3 3 5 5 6Zm10-37v15h3l7-2c2-1 3-3 3-5 0-3-1-5-3-6l-7-2h-3Zm27 36c-2 3-4 5-7 5l-5-2c-1 0-3-2-4-5l-8-12h-3v11c0 3 0 4 2 5l-6 3c-4 0-6-3-6-8v-33c0-2-1-4-3-4l6-3h11c5 0 10 1 13 4 4 2 6 6 6 11 0 3-1 5-3 7-1 3-4 4-6 5l7 12 6 4Zm13-11h10l-5-17-5 17Zm28 12-3 3-4 1-4-2-3-4-2-4h-14l-2 5c-1 3-3 5-6 5l-4-1-2-3 2-1 1-3 13-34-2-4c1-2 3-3 6-3l5 2 3 6 11 31c1 3 3 5 5 6Zm36-35-2 4-4 1-5-2 1-2-2-3-6-2-5 2-3 3c0 2 1 3 3 4l7 4 7 3 7 6c2 2 3 4 3 7 0 4-2 7-6 10-3 2-8 4-13 4s-9-1-13-3-5-5-5-8l1-4 5-2 5 2-1 4c0 1 0 2 2 3l6 1 6-1 3-4c0-2-1-4-3-5l-7-4-7-3-7-5c-2-2-3-4-3-7 0-4 2-7 6-9 3-3 7-4 12-4 6 0 10 1 13 3s5 4 5 7Z"/>
+</svg>

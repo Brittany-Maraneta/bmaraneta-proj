@@ -1,7 +1,7 @@
 <template>
   <nav>
     <NuxtLink to="/">
-      <img src="" alt="logo" width="75" height="50" />
+      <img src="/public/logo.svg" alt="logo" width="85" height="85" />
     </NuxtLink>
     <ul>
       <li>
@@ -12,9 +12,6 @@
       </li>
       <li class="art-link">
         <NuxtLink to="/art">Art</NuxtLink>
-      </li>
-      <li v-for="({ title, href }, i) in linkData" :key="i">
-        <NuxtLink :to="href">{{ title }}</NuxtLink>
       </li>
     </ul>
     <!-- <div @click="isVisible = !isVisible" class="menu-wrapper"></div> -->
@@ -27,12 +24,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: rgb(243, 237, 237);
   width: 100%;
   max-width: 100vw;
   position: absolute;
   top: 0;
-  padding: 1rem;
+  padding: 0rem;
   z-index: 100;
   opacity: 80%;
   overflow-x: hidden;
@@ -60,19 +57,19 @@ li {
 }
 
 li a {
-  color: rgba(4, 73, 4, 0.812);
+  color: black;
   text-decoration: none;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 li:hover a {
-  color: #a1c0a9;
+  color: #a0a0a0;
 }
 
 .art-link {
-  margin-right: 4rem; /* Adjust this value as needed */
+  margin-right: 2rem; /* Adjust this value as needed */
 }
 
 @media screen and (min-width: 880px) {
