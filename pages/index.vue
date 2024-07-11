@@ -1,4 +1,14 @@
 <template>
+  <Carousel />
+  <h1>Developer and Artist</h1>
+  <img src="/public/logo.svg" alt="logo" width="85px" height="85px" />
+  <h2>
+    A developer and artist! Love for media, art and developing! I explore the
+    art world in different ways and believe that design is a beautiful way to
+    express. Developing and building is my passion, to be able to create and
+    build something from the bottom to the top.
+  </h2>
+
   <div class="header">
     <img
       src="https://images.pexels.com/photos/16780323/pexels-photo-16780323/free-photo-of-lens-ad-a-digital-camera-on-the-table.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -13,13 +23,6 @@
       alt="Image 3 - Tech"
     />
   </div>
-  <h1>Brittany Maraneta</h1>
-  <p>
-    A developer and artist! Love for media, art and developing! I explore the
-    art world in different ways and believe that design is a beautiful way to
-    express. Developing and building is my passion, to be able to create and
-    build something from the bottom to the top.
-  </p>
 </template>
 
 <style scoped>
@@ -28,14 +31,15 @@ h1 {
   margin-top: 80px;
   font-size: 50px;
   margin-bottom: 30px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-p {
+h2 {
   text-align: center;
   font-size: 20px;
   margin-left: 100px;
   margin-right: 100px;
+  margin-top: 5rem;
 }
 
 .header {
@@ -49,7 +53,7 @@ p {
 .header img {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Ensures images cover their containers without distortion */
+  object-fit: cover;
 }
 
 .logo-and-text {
