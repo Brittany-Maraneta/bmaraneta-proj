@@ -1,7 +1,7 @@
 <template>
   <div class="carousel-container">
     <div class="carousel">
-      <h1 class="carousel-title">Brittany Maraneta</h1>
+      <!-- <h1 class="carousel-title">Brittany Maraneta</h1> -->
 
       <div class="carousel-inner">
         <transition
@@ -139,7 +139,7 @@ export default {
   transform: translate(-50%, -50%);
   color: black;
   z-index: 10;
-  background: rgba(243, 237, 237, 0.7);
+  background: rgba(243, 237, 237, 0.3);
   padding: 10px;
   border-radius: 10px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;

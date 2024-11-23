@@ -11,7 +11,7 @@
         <NuxtLink to="/coding">Coding</NuxtLink>
       </li>
       <li class="art-link">
-        <NuxtLink to="/art">Art</NuxtLink>
+        <NuxtLink to="/art">Design</NuxtLink>
       </li>
     </ul>
     <!-- <div @click="isVisible = !isVisible" class="menu-wrapper"></div> -->
@@ -24,7 +24,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(243, 237, 237);
+  // background-color: rgb(243, 237, 237);
   width: 100%;
   max-width: 100vw;
   position: absolute;
