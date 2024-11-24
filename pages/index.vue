@@ -9,31 +9,15 @@
     <Logo />
     <h2 class="main">
       <!-- Designer Section -->
-      <span
-        class="designer"
-        @mouseenter="startPencilMovement"
-        @mouseleave="stopPencilMovement"
-      >
+      <span class="designer">
         <NuxtLink to="/art">Designer</NuxtLink>
-        <div v-if="showPencil" class="pencil" :style="pencilStyle">✏️</div>
       </span>
 
       <span class="separator">&</span>
 
       <!-- Developer Section -->
-      <span
-        class="developer"
-        @mouseenter="showDeveloperSkills = true"
-        @mouseleave="showDeveloperSkills = false"
-      >
+      <span class="developer">
         <NuxtLink to="/coding">Developer</NuxtLink>
-        <div v-if="showDeveloperSkills" class="skills">
-          <span class="skill-item">JavaScript</span>
-          <span class="skill-item">CSS</span>
-          <span class="skill-item">HTML</span>
-          <span class="skill-item">Tailwind CSS</span>
-          <span class="skill-item">Vue</span>
-        </div>
       </span>
     </h2>
 
@@ -47,50 +31,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-
-// State to control pencil animation and developer skills popup
-const showPencil = ref(false);
-const pencilStyle = ref({
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-20%, -20%)",
-  transition: "all 1s ease",
-});
-const showDeveloperSkills = ref(false);
-
-// Start moving pencil randomly when hovering over "Designer"
-const startPencilMovement = () => {
-  showPencil.value = true;
-  movePencilRandomly();
-};
-
-// Stop moving pencil when leaving "Designer"
-const stopPencilMovement = () => {
-  showPencil.value = false;
-  pencilStyle.value = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-  };
-};
-
-// Function to move pencil randomly on the page
-const movePencilRandomly = () => {
-  setInterval(() => {
-    const randomTop = Math.random() * 100;
-    const randomLeft = Math.random() * 100;
-    pencilStyle.value = {
-      position: "absolute",
-      top: `${randomTop}%`,
-      left: `${randomLeft}%`,
-      transform: "translate(-50%, -50%)",
-      transition: "all 0.1s ease",
-    };
-  }, 100);
-};
+// No special logic for pencil or hover effect in this version
 </script>
 
 <style scoped>
@@ -118,18 +59,6 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-}
-
-/* Content styling */
-.content {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Main Heading Styling */
@@ -198,51 +127,11 @@ h2.main .designer a,
 h2.main .developer a {
   text-decoration: none;
   color: black;
-  transition: color 0.3s ease;
 }
 
 h2.main .designer a:hover,
 h2.main .developer a:hover {
-  color: #a0a0a0;
-}
-
-/* Pencil Animation */
-.pencil {
-  position: absolute;
-  font-size: 24px;
-  transition: all 0.1s ease;
-}
-
-/* Developer Skills */
-.skills {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  position: absolute;
-  top: -50px;
-  right: -150px;
-  background: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 10px;
-  border-radius: 8px;
-  font-family: "Courier New", Courier, monospace;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.skill-item {
-  font-size: 18px;
-  font-weight: bold;
-  animation: fadeIn 0.5s ease-out;
-}
-
-/* Fade In Keyframes for Developer Skills */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  color: #797676;
 }
 
 /* Button Styling */

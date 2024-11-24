@@ -1,8 +1,6 @@
 <template>
   <div class="carousel-container">
     <div class="carousel">
-      <!-- <h1 class="carousel-title">Brittany Maraneta</h1> -->
-
       <div class="carousel-inner">
         <transition
           name="fade"
@@ -85,15 +83,15 @@ export default {
 .carousel-container {
   position: relative;
   width: 100%; /* Full width of the parent container */
-  max-width: 1500px; /* Increase max-width for larger displays */
+  max-width: 1000px; /* Increase max-width for larger displays */
   margin: auto; /* Center horizontally */
 }
 
 .carousel {
-  margin-top: 10rem;
+  margin-top: 8rem;
   position: relative;
   width: 100%; /* Full width of the parent container */
-  height: 600px; /* Height of the carousel */
+  height: 400px; /* Height of the carousel */
   overflow: hidden;
   border-radius: 20px;
 }
@@ -157,11 +155,11 @@ export default {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .carousel-title {
-    font-size: 2.5rem; /* Adjust font size for smaller screens */
+    font-size: 2.5rem;
   }
 
   .carousel {
-    height: 400px; /* Adjust height for smaller screens */
+    height: 400px;
   }
 }
 </style>
