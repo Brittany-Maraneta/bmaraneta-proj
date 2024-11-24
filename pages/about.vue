@@ -3,11 +3,12 @@
     <h1 class="name-text">Hi, my name is Brittany Maraneta</h1>
 
     <div class="cube-container">
-      <!-- Left button -->
-      <button @click="rotateLeft" class="rotate-btn left">Left</button>
-
       <!-- Cube -->
-      <div :style="cubeStyle" class="cube">
+      <div
+        class="cube"
+        @mouseenter="pauseRotation"
+        @mouseleave="resumeRotation"
+      >
         <div class="cube-side front">
           I love all things art & designing! I have a BFA in Media Arts &
           Technology & a certificate in Web Developing.
@@ -16,9 +17,6 @@
         <div class="cube-side left">Left Text</div>
         <div class="cube-side right">Right Text</div>
       </div>
-
-      <!-- Right button -->
-      <button @click="rotateRight" class="rotate-btn right">Right</button>
     </div>
   </div>
 </template>
@@ -27,23 +25,15 @@
 export default {
   data() {
     return {
-      rotation: 0, // Initial rotation angle
+      isPaused: false, // Flag to track if the rotation should be paused
     };
   },
-  computed: {
-    cubeStyle() {
-      return {
-        transform: `rotateY(${this.rotation}deg)`,
-        transition: "transform 0.8s ease-in-out",
-      };
-    },
-  },
   methods: {
-    rotateLeft() {
-      this.rotation -= 90; // Rotate 90 degrees left
+    pauseRotation() {
+      this.isPaused = true; // Set flag to pause rotation
     },
-    rotateRight() {
-      this.rotation += 90; // Rotate 90 degrees right
+    resumeRotation() {
+      this.isPaused = false; // Set flag to resume rotation
     },
   },
 };
@@ -71,7 +61,7 @@ export default {
 /* The header text styling */
 .name-text {
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   color: black;
   text-align: center;
 }
@@ -85,6 +75,7 @@ export default {
   width: 350px;
   height: 350px;
   margin: 20px 0;
+  perspective: 1000px; /* Adds perspective to the scene for better 3D effect */
 }
 
 /* Cube styling */
@@ -93,9 +84,24 @@ export default {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d; /* Ensure proper 3D rotation */
-  transform: rotateX(-20deg);
+  animation: rotateCube 10s infinite linear; /* Continuous rotation */
   transition: transform 1s ease-in-out; /* Smooth rotation */
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Cube shadow for depth */
+}
+
+/* Keyframes for continuous cube rotation */
+@keyframes rotateCube {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Pause the animation when hovered */
+.cube:hover {
+  animation-play-state: paused; /* Pauses the animation when hovered */
 }
 
 /* Each side of the cube */
@@ -122,50 +128,18 @@ export default {
 
 /* Each side’s transformation */
 .front {
-  background-color: rgb(151 122 113);
-  transform: translateZ(175px);
+  transform: translateZ(175px); /* Moves the front face forward */
 }
 
 .back {
-  background-color: rgb(151 122 113);
-  transform: rotateY(180deg) translateZ(175px);
+  transform: rotateY(180deg) translateZ(175px); /* Moves the back face behind */
 }
 
 .left {
-  background-color: rgb(151 122 113);
-  transform: rotateY(-90deg) translateZ(175px);
+  transform: rotateY(-90deg) translateZ(175px); /* Moves the left face */
 }
 
 .right {
-  background-color: rgb(151 122 113);
-  transform: rotateY(90deg) translateZ(175px);
-}
-
-/* Buttons for rotating the cube */
-.rotate-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 12px 20px;
-  background-color: rgb(151 122 113);
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.rotate-btn:hover {
-  background-color: #a0a0a0;
-  color: black;
-}
-
-.rotate-btn.left {
-  left: -80px;
-}
-
-.rotate-btn.right {
-  right: -80px;
+  transform: rotateY(90deg) translateZ(175px); /* Moves the right face */
 }
 </style>
