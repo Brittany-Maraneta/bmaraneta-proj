@@ -8,10 +8,10 @@
         <NuxtLink to="/about">About</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/coding">Coding</NuxtLink>
+        <NuxtLink to="/coding">Projects</NuxtLink>
       </li>
       <li class="art-link">
-        <NuxtLink to="/art">Design</NuxtLink>
+        <NuxtLink to="/art">Designs</NuxtLink>
       </li>
     </ul>
     <!-- <div @click="isVisible = !isVisible" class="menu-wrapper"></div> -->
@@ -60,7 +60,7 @@ li a {
   color: black;
   text-decoration: none;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
