@@ -39,17 +39,17 @@ export default {
 }
 
 .footer-column {
-  max-width: 1200px; /* Optional: to restrict content width */
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .footer-links {
   display: flex;
-  justify-content: center; /* Center the links */
-  gap: 30px; /* Space between the links */
+  justify-content: center;
+  gap: 30px;
   list-style-type: none;
   padding: 0;
-  margin: 0 0 10px 0; /* Bottom margin to separate links from the copyright text */
+  margin: 0 0 10px 0;
 }
 
 .footer-links a {
@@ -70,7 +70,7 @@ hr {
 
 .copyright-text {
   font-size: 14px;
-  color: #cccccc;
+  color: #0b0b0b;
   text-align: center;
 }
 </style>
