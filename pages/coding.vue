@@ -1,7 +1,13 @@
 <template>
   <div class="page-container">
     <div class="content-wrapper">
-      <h1 class="name-text" ref="title">Developing Portfolio</h1>
+      <h1 class="name-text">
+        <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span
+        ><span>o</span><span>p</span><span>i</span><span>n</span><span>g</span
+        ><span> </span> <span>P</span><span>o</span><span>r</span><span>t</span
+        ><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
+      </h1>
+
       <h3 class="main-text">
         Web Developer with experience in HTML, CSS, Tailwind CSS, JavaScript,
         and Vue
@@ -179,20 +185,31 @@
 <script>
 export default {
   mounted() {
-    const titleText = "Developing Portfolio";
-    const titleElement = this.$refs.title;
+    this.$nextTick(() => {
+      const titleText = "Developing Portfolio";
+      const titleElement = this.$refs.title;
 
-    console.log("Mounted hook called");
-    console.log("Title element:", titleElement); // Check if the title element is being selected
+      // Check if titleElement exists
+      if (titleElement) {
+        // Clear the content before adding spans
+        titleElement.innerHTML = "";
 
-    // Clear the content and add each letter in a span
-    titleElement.innerHTML = ""; // Ensure content is cleared before appending
+        // Split the text into individual characters, including spaces
+        titleText.split("").forEach((letter, index) => {
+          const span = document.createElement("span");
 
-    titleText.split("").forEach((letter, index) => {
-      const span = document.createElement("span");
-      span.textContent = letter;
-      span.style.animationDelay = `${index * 0.1}s`; // Ensure delay for each letter
-      titleElement.appendChild(span);
+          // Add non-breaking space for actual spaces
+          span.textContent = letter === " " ? "\u00A0" : letter;
+
+          // Apply the animation delay to each letter
+          span.style.animationDelay = `${index * 0.1}s`;
+
+          // Append each span to the title
+          titleElement.appendChild(span);
+        });
+      } else {
+        console.error("titleElement is undefined");
+      }
     });
   },
 };
@@ -224,49 +241,45 @@ body {
   z-index: -1;
 }
 
-@keyframes rainbow {
-  0% {
-    color: red;
-  }
-  14% {
-    color: orange;
-  }
-  28% {
-    color: yellow;
-  }
-  42% {
-    color: green;
-  }
-  57% {
-    color: blue;
-  }
-  71% {
-    color: indigo;
-  }
-  85% {
-    color: violet;
-  }
-  100% {
-    color: red;
-  }
-}
-
 .name-text {
   margin-top: 3rem;
   font-size: 3rem;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  color: black; /* Initial color for the text */
-  z-index: 10; /* Ensure it stays above other content */
 }
 
 .name-text span {
   display: inline-block;
-  animation: rainbow 5s linear infinite; /* Adjusted animation duration */
-  animation-delay: 0s;
-  animation-timing-function: linear;
-  font-weight: bold;
-  color: inherit; /* Ensure color is inherited from the animation */
+  animation: rainbow 2s infinite; /* Apply rainbow animation to each letter */
+  animation-timing-function: linear; /* Smooth color transition */
+  margin-right: 2px; /* Optional: Adds some spacing between letters */
+}
+
+@keyframes rainbow {
+  0% {
+    color: rgb(252, 162, 162);
+  }
+  14% {
+    color: rgb(252, 210, 133);
+  }
+  28% {
+    color: rgb(245, 245, 137);
+  }
+  42% {
+    color: rgb(150, 244, 150);
+  }
+  57% {
+    color: rgb(160, 160, 243);
+  }
+  71% {
+    color: rgb(208, 151, 250);
+  }
+  85% {
+    color: rgb(239, 168, 239);
+  }
+  100% {
+    color: rgb(243, 174, 174);
+  }
 }
 
 /* General Layout */
