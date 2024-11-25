@@ -203,4 +203,8 @@ body {
   margin: 10px 0;
   transition: color 0.3s ease;
 }
+
+.a:hover {
+  color: #a0a0a0;
+}
 </style>
