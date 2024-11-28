@@ -11,7 +11,12 @@
               >LinkedIn</a
             >
           </li>
-          <li><a href="#">Instagram</a></li>
+          <li>
+            <a
+              href="https://www.figma.com/files/team/1365392047841771805/recents-and-sharing?fuid=1326342232133192406"
+              >Figma</a
+            >
+          </li>
         </ul>
         <!-- Copyright Text below the links -->
         <span class="copyright-text">© 2024 BMARAS</span>
