@@ -118,7 +118,7 @@ body {
   width: 350px;
   height: 350px;
   margin: 20px 0;
-  perspective: 1000px; /* Adds perspective to the scene for better 3D effect */
+  perspective: 1000px;
   z-index: 10;
 }
 
@@ -127,8 +127,8 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d; /* Ensure proper 3D rotation */
-  animation: rotateCube 10s infinite linear; /* Continuous rotation */
+  transform-style: preserve-3d;
+  animation: rotateCube 10s infinite linear;
 }
 
 /* Keyframes for continuous cube rotation */
