@@ -189,7 +189,6 @@ export default {
       const titleText = "Developing Portfolio";
       const titleElement = this.$refs.title;
 
-      // Check if titleElement exists
       if (titleElement) {
         // Clear the content before adding spans
         titleElement.innerHTML = "";
@@ -250,9 +249,9 @@ body {
 
 .name-text span {
   display: inline-block;
-  animation: rainbow 2s infinite; /* Apply rainbow animation to each letter */
-  animation-timing-function: linear; /* Smooth color transition */
-  margin-right: 2px; /* Optional: Adds some spacing between letters */
+  animation: rainbow 2s infinite;
+  animation-timing-function: linear;
+  margin-right: 2px;
 }
 
 @keyframes rainbow {

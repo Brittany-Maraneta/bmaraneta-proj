@@ -13,6 +13,10 @@
           <div class="content">
             I love all things designing and developing! BFA in Media Arts &
             Technology & a certificate in Web Developing.
+            <br />
+            <br />BFA of Media Arts & Technology: Alberta's University of the
+            Arts <br />
+            <br />Web Developing Certificate: SAIT AB
           </div>
         </div>
         <div class="cube-side back">
@@ -36,18 +40,20 @@
           </div>
         </div>
         <div class="cube-side right">
+          <p>Get to know me more!</p>
+
+          <div class="content">
+            I'm based in Calgary, Alberta! Get to know my work experiences even
+            more! :)
+          </div>
           <a
             href="/resume"
             target="_blank"
             rel="noopener noreferrer"
             class="resume-link"
           >
-            Resume
+            View Resume
           </a>
-          <div class="content">
-            I'm based in Calgary, Alberta! Get to know my work experiences even
-            more! :)
-          </div>
         </div>
       </div>
     </div>
@@ -79,7 +85,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Prevent scrolling */
+  overflow: hidden;
 }
 
 /* Full viewport container */
@@ -99,7 +105,6 @@ body {
   left: 0;
 }
 
-/* Styling for the name text */
 .name-text {
   font-size: 3rem;
   margin-bottom: 35px;
@@ -109,7 +114,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Cube container with fixed dimensions */
 .cube-container {
   position: relative;
   display: flex;
@@ -122,7 +126,6 @@ body {
   z-index: 10;
 }
 
-/* Cube styling */
 .cube {
   position: relative;
   width: 100%;
@@ -190,7 +193,6 @@ body {
   transform: rotateY(90deg) translateZ(175px);
 }
 
-/* Styling for the resume link */
 .resume-link {
   color: #fff;
   font-size: 1.2rem;

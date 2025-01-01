@@ -32,12 +32,14 @@
       </p>
 
       <h3>
-        Portfolio | Vue & CSS |
-        <a href="https://github.com/Brittany-Maraneta/bmaraneta-proj">Github</a>
+        WeTravel | Vue & CSS |
+        <a href="https://github.com/Brittany-Maraneta/BMARAS_travelBlog"
+          >Github</a
+        >
       </h3>
       <p>
-        • Created a portfolio to showcase my experiences in Front and Back End
-        Developing.
+        • Created a website for people traveling to find ideas of acitivities,
+        hotels, etc. in Front and Back End Developing.
       </p>
 
       <h2>Technical Skills</h2>
@@ -84,7 +86,7 @@
       </h3>
       <h3>
         Alberta’s University of the Arts (AUARTS) BFA Media Arts & Technology |
-        May 2015
+        May 2021
       </h3>
     </div>
   </div>
@@ -94,7 +96,7 @@
 export default {
   head() {
     return {
-      title: "Resume - Brittany Maraneta", // Set the page title
+      title: "Resume - Brittany Maraneta",
     };
   },
 };

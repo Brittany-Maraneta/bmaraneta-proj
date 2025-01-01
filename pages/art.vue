@@ -111,9 +111,9 @@ export default {
 <style scoped>
 html,
 body {
-  height: 100%; /* Ensure the body takes full viewport height */
+  height: 100%;
   background-color: transparent;
-  overflow-x: auto; /* Prevent horizontal scrolling */
+  overflow-x: auto;
 }
 
 .page-container {
@@ -122,13 +122,12 @@ body {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  min-height: 100vh; /* Ensure the container fills at least the full viewport height */
+  min-height: 100vh;
   background-image: url("https://images.pexels.com/photos/4252522/pexels-photo-4252522.jpeg");
   background-size: cover;
   background-attachment: fixed;
 }
 
-/* Text and general content styles */
 .dancing-title {
   font-size: 3rem;
   color: white;
@@ -171,7 +170,6 @@ body {
   justify-content: center;
   gap: 30px;
   margin-top: 20px;
-  /* padding: 10px; */
   width: 100%;
 }
 

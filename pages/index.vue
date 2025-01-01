@@ -8,20 +8,17 @@
     </video>
     <Logo />
     <h2 class="main">
-      <!-- Designer Section -->
       <span class="designer">
         <NuxtLink to="/art">Designer</NuxtLink>
       </span>
 
       <span class="separator">&</span>
 
-      <!-- Developer Section -->
       <span class="developer">
         <NuxtLink to="/coding">Developer</NuxtLink>
       </span>
     </h2>
 
-    <!-- Button Group -->
     <div class="button-group">
       <NuxtLink to="/about">
         <button>About</button>
@@ -30,9 +27,7 @@
   </div>
 </template>
 
-<script setup>
-// No special logic for pencil or hover effect in this version
-</script>
+<script setup></script>
 
 <style scoped>
 html,
@@ -50,7 +45,6 @@ body {
   overflow: hidden;
 }
 
-/* Background Video */
 .background-video {
   position: fixed;
   top: 0;
@@ -61,7 +55,6 @@ body {
   z-index: -1;
 }
 
-/* Main Heading Styling */
 h2.main {
   display: flex;
   justify-content: center;
@@ -113,7 +106,6 @@ h2.main .separator {
   }
 }
 
-/* Apply animations */
 h2.main .designer {
   animation-name: slide-in-left;
 }
@@ -122,7 +114,6 @@ h2.main .developer {
   animation-name: slide-in-right;
 }
 
-/* Hover Effects */
 h2.main .designer a,
 h2.main .developer a {
   text-decoration: none;
@@ -134,7 +125,6 @@ h2.main .developer a:hover {
   color: #797676;
 }
 
-/* Button Styling */
 .button-group {
   display: flex;
   justify-content: center;
