@@ -37,6 +37,9 @@
         <div class="wireframe-card-content">
           <h3>{{ project.title }}</h3>
           <p>{{ project.description }}</p>
+          <a :href="project.link" target="_blank" class="project-link"
+            >View Project</a
+          >
         </div>
       </div>
     </div>
@@ -50,7 +53,7 @@ export default {
       // Logos Section (unchanged)
       cards: [
         {
-          text: "BMARAS: Main logo to represent myself. The idea of constant growth through the flowers and my name.",
+          text: "BMARAS: Main logo to represent myself. The idea of constant growth and kearning through the flowers.",
           image: "/images/Bmaras.png",
         },
         {
@@ -58,11 +61,11 @@ export default {
           image: "/images/bmaras2.png",
         },
         {
-          text: "Creating a floral to submit to a company that asked for freedom, growth, nature.",
+          text: "Created a floral to submit to a company that asked for freedom, growth, nature.",
           image: "/images/Rock.png",
         },
         {
-          text: "A logo to represent an ecommerce tech company selling tech",
+          text: "A logo to represent an ecommerce company selling tech",
           image: "/images/TCrew.png",
         },
         {
@@ -74,31 +77,30 @@ export default {
       // Wireframing Section
       wireframeProjects: [
         {
-          title: "Large Project: Travel Website",
+          title: "Game Design Ideas",
           description:
-            "Using Vue & Tailwind CSS. Showcasing full stack website for travel suggestions.",
+            "Wireframing a game design with 4 levels of different enemies.",
+
           image:
-            "https://images.pexels.com/photos/7009459/pexels-photo-7009459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "https://images.pexels.com/photos/4511372/pexels-photo-4511372.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          link: "https://www.figma.com/board/jO3F3pRSSa6SsRjf771QHu/Game---JK-%26-BM?node-id=0-1&p=f&t=vGaIapBpIuDGcOb4-0",
         },
         {
-          title: "Small Project: Practice",
+          title: "Mockup Webpage",
           description:
-            "Using Vanilla JavaScript and CSS. Showcasing Carousel, scroll button, contact page, dark mode toggle.",
+            "Created a mockup webpage for my capstone project; a travel blog website..",
           image:
-            "https://images.pexels.com/photos/3205473/pexels-photo-3205473.jpeg",
+            "https://images.pexels.com/photos/2007395/pexels-photo-2007395.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          link: "https://www.figma.com/design/ImPPDMNgFnOHTrQ3hIx4vT/Webpage-Mockup?node-id=0-1&p=f&t=JGj74JjdKe6HsBbR-0",
         },
+
         {
-          title: "Large Group Project: Ecommerce",
+          title: "Portfolio Wireframing",
           description:
-            "Using Vue, Nuxt & Tailwind CSS. Working with a group to make an ecommerce full stack website for tech items.",
+            "Wireframing for a an art portfolio that includes designs, gallery, etc.",
           image:
-            "https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg",
-        },
-        {
-          title: "Small Project: Login",
-          description: "Using JavaScript. Creating a simple Login section.",
-          image:
-            "https://images.pexels.com/photos/2882566/pexels-photo-2882566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          link: "https://www.figma.com/board/6WuQDViSEJG3AwHNQhJ8Qd/DSGN-270-Assignment-2---Website-Wireframes?node-id=0-1&p=f&t=5R9A3eZTlBjazbDI-0",
         },
       ],
     };
@@ -109,27 +111,24 @@ export default {
 <style scoped>
 html,
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  height: 100%; /* Ensure the body takes full viewport height */
+  background-color: transparent;
+  overflow-x: auto; /* Prevent horizontal scrolling */
 }
 
 .page-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding-top: 100px;
+  justify-content: flex-start;
   width: 100%;
+  min-height: 100vh; /* Ensure the container fills at least the full viewport height */
   background-image: url("https://images.pexels.com/photos/4252522/pexels-photo-4252522.jpeg");
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-  min-height: 100vh;
-  background-color: transparent;
+  background-attachment: fixed;
 }
 
+/* Text and general content styles */
 .dancing-title {
   font-size: 3rem;
   color: white;
@@ -137,6 +136,7 @@ body {
   animation: dance 1s ease-in-out infinite;
   text-align: center;
   margin: 10px;
+  margin-top: 2em;
 }
 
 @keyframes dance {
@@ -162,7 +162,6 @@ body {
   font-size: 1.2rem;
   color: rgb(0, 0, 0);
   margin: 10px;
-  padding: 0 20px;
 }
 
 /* Logos Section */
@@ -172,7 +171,8 @@ body {
   justify-content: center;
   gap: 30px;
   margin-top: 20px;
-  padding: 10px;
+  /* padding: 10px; */
+  width: 100%;
 }
 
 .card {
@@ -230,7 +230,7 @@ body {
 /* Wireframing Section */
 .wireframing-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   margin-top: 20px;
   width: 90%;
@@ -272,5 +272,20 @@ body {
 
 .l {
   margin-top: 100px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #a0a0a0;
 }
 </style>
